@@ -1,0 +1,25 @@
+
+.container__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 180px;
+}
+.container__logo img:nth-child(1) {
+  margin-bottom: 5px;
+}
+
+.container__logo img:nth-child(2) {
+  margin-top: 7px;
+}
+
+.container__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+
+}

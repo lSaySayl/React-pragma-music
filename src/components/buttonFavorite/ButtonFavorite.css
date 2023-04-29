@@ -1,0 +1,26 @@
+.btn__favorite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 62px;
+  width: 303px;
+  border-radius: 25px;
+  padding: 16px 23px 16px 23px;
+  margin-bottom: 10px;
+  background: #00b880;
+  box-shadow: 10px 20px 50px 10px #00eca5 inset;
+  box-shadow: 0px 8px 30px 0px #006b4b;
+}
+
+.btn__favorite .icon {
+  height: 30px;
+  width: 30px;
+  left: 23px;
+  top: 16px;
+  border-radius: 0px;
+}

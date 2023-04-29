@@ -1,0 +1,22 @@
+.container__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 175px;
+}
+
+.container__name span {
+
+  font-size: 14px;
+  font-weight: 600;
+
+  padding: 5px;
+  background-color: #6529cdf7;
+  border-radius: 100%;
+}
+
+.container__name p {
+
+  font-size: 16px;
+  font-weight: 700;
+}

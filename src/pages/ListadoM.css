@@ -1,0 +1,174 @@
+.container__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 844px;
+  width: 390px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.container__imgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__imgs img:nth-child(1) {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  height: 36px;
+  width: 36px;
+}
+
+.container__imgs img:nth-child(2) {
+  margin-top: 7px;
+  height: 50px;
+  width: 10px;
+}
+
+.container__imgs img:nth-child(3) {
+  margin-bottom: 4px;
+  margin-left: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.container__icon .icon__out {
+  display: flex;
+  font-size: 30px;
+}
+.container__tittle {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 5px 0;
+
+
+}
+
+.container__tittle h1 {
+  margin-left: 20px;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.container__songs {
+  height: 78%;
+  width: 100%;
+  padding: 10px 20px;
+  overflow-y: auto;
+}
+
+.container__song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.container__card .album {
+  width: 50px;
+  height: 50px;
+}
+
+.container__card .container__text {
+  width: 400px;
+  margin: 0 10px;
+}
+
+.container__card .container__text p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container__card .container__text span {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #848484;
+}
+
+.icon__heart {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+
+.icon__heartComplete {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  color: #6529cdf7;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 88px;
+  width: 391px;
+
+  background: rgb(27, 19, 42);
+  background: radial-gradient(
+    circle,
+    rgba(27, 19, 42, 0.7133228291316527) 0%,
+    rgba(100, 41, 205, 0.4948354341736695) 85%,
+    rgba(100, 41, 205, 0.9009978991596639) 100%
+  );
+  box-shadow: 0px 0px 30px 0px rgba(100, 41, 205, 0.8);
+  border: 1px solid #6529cdf7;
+}
+
+
+
+
+
+
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 1px;
+  background-color: #1e1e1e;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #1e1e1e;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #1e1e1e;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: #39393991;
+}
