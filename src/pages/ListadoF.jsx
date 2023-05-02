@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import favorite from "../assets/favorite.svg";
 import music from "../assets/music.svg";
 import album from "../assets/album.jpg"
+import albumDos from "../assets/albumdos.jpg"
+
 import "./ListadoF.css"
 
 import "./ListadoM.css";
@@ -37,10 +39,28 @@ const ListadoF = () => {
                 className="album"
               />
               <section className="container__text">
-                <p>a</p>
-                <span>a</span>
+                <p>Slipknot</p>
+                <span>Wait and Bleed</span>
               </section>
+              <RiHeartLine className="icon__heart"/>
             </section>
+            
+
+      </section>
+      <section className="container__song">
+            <section className="container__card">
+              <img
+                src={albumDos}
+                alt="Album cover"
+                className="album"
+              />
+              <section className="container__text">
+                <p>Vol. 3: The Subliminal Verses</p>
+                <span>Before I Forget</span>
+              </section>
+              <RiHeartLine className="icon__heart"/>
+            </section>
+            
 
       </section>
       </section>
