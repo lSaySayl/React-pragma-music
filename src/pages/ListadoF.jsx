@@ -2,7 +2,8 @@ import { RiLogoutBoxRLine, RiHeartLine, RiHeartFill } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import favorite from "../assets/favorite.svg";
 import music from "../assets/music.svg";
-import "./ListadoF.css";
+import album from "../assets/album.jpg"
+import "./ListadoF.css"
 
 import "./ListadoM.css";
 
@@ -27,16 +28,21 @@ const ListadoF = () => {
       </section>
 
       <section className="container__songs">
-        <section className="container__song">
-          <section className="container__card">
-            <img src="" alt="Album cover" className="album" />
-            <section className="container__text">
-              <p>Slipknot</p>
-              <span>Custer</span>
+
+          <section className="container__song">
+            <section className="container__card">
+              <img
+                src={album}
+                alt="Album cover"
+                className="album"
+              />
+              <section className="container__text">
+                <p>a</p>
+                <span>a</span>
+              </section>
             </section>
-            <RiHeartFill className="icon__heartComplete"></RiHeartFill>
-          </section>
-        </section>
+
+      </section>
       </section>
 
       <section className="container__footer">
