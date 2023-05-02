@@ -10,23 +10,32 @@ import music from "../assets/music.svg";
 import "./ListadoM.css";
 import ButtonFavorite from "../components/buttonFavorite/ButtonFavorite";
 
+
 const ListadoM = () => {
+
+// Estados para canciones y mensaje de favoritos
+
   const [canciones, setCanciones] = useState([]);
   const [mensajeFavoritos, setMensajeFavoritos] = useState(null);
 
-  async function obtenerCanciones() {
-    const token = await pedirTokens();
-    const res = await consultarCanciones(token);
+//Función asincrónica para obtener canciones de spotify
+
+  async function obtenerCanciones() { 
+    const token = await pedirTokens(); //Token de autorización
+    const res = await consultarCanciones(token); //Traer canciones
     const cancionesConEstado = res.tracks.map((cancion) => ({
       ...cancion,
-      heart: false, // Agregar un estado de corazón para cada canción
+      heart: false, // Agregar un estado de corazón para cada canción luego de hacer una copia con el operador spread
     }));
-    setCanciones(cancionesConEstado);
+    setCanciones(cancionesConEstado); //Seteando el estado para actualizar el componente con el nuevo arreglo y la propiedad heart
   }
+
+  //UseEffect para llamar nuestra función asincronica y que solo se ejecute una vez
 
   useEffect(() => {
     obtenerCanciones();
   }, []);
+
   
 
   useEffect(() => {
@@ -35,6 +44,9 @@ const ListadoM = () => {
     }, 2000);
     return () => clearTimeout(timer);
   }, [mensajeFavoritos]);
+
+  //Función que cambia el estado del corazón para una sola canción.
+  
 
   const toggleHeart = (index) => {
     // Crear una nueva lista de canciones con el estado de corazón actualizado
